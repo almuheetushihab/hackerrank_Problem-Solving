@@ -21,3 +21,42 @@ fun hourglassSum(arr: Array<Array<Int>>): Int {
     return maxSum
 }
 
+
+//3 Number of DataStructure Problem Solve
+
+
+fun dynamicArray(n: Int, queries: Array<Array<Int>>): Array<Int> {
+    val seqList = Array(n) { mutableListOf<Int>() }
+    val result = mutableListOf<Int>()
+    var lastAnswer = 0
+
+    for (query in queries) {
+        val type = query[0]
+        val x = query[1]
+        val y = query[2]
+
+        val seqIndex = (x xor lastAnswer) % n
+
+        if (type == 1) {
+            seqList[seqIndex].add(y)
+        } else if (type == 2) {
+            lastAnswer = seqList[seqIndex][y % seqList[seqIndex].size]
+            result.add(lastAnswer)
+        }
+    }
+
+    return result.toTypedArray()
+}
+
+
+//2nd Number of DataStructure Problem Solve
+
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
+//2nd Number of DataStructure Problem Solve
