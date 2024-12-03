@@ -49,7 +49,25 @@ fun dynamicArray(n: Int, queries: Array<Array<Int>>): Array<Int> {
 }
 
 
-//2nd Number of DataStructure Problem Solve
+//4th Number of DataStructure Problem Solve
+
+fun rotateLeft(d: Int, arr: Array<Int>): Array<Int> {
+    val n = arr.size
+    val effectiveD = d % n
+
+
+    val rotatedArray = Array(n) { 0 }
+
+
+    for (i in 0 until n) {
+        rotatedArray[i] = arr[(i + effectiveD) % n]
+    }
+
+    return rotatedArray
+
+}
+
+
 
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
