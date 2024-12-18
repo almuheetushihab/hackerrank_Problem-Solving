@@ -50,6 +50,7 @@ fun dynamicArray(n: Int, queries: Array<Array<Int>>): Array<Int> {
 
 
 //4th Number of DataStructure Problem Solve
+// 4th Number of DataStructure Problem Solve
 
 fun rotateLeft(d: Int, arr: Array<Int>): Array<Int> {
     val n = arr.size
