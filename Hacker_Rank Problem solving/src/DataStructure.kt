@@ -88,7 +88,42 @@ fun kangaroo(x1: Int, v1: Int, x2: Int, v2: Int): String {
 
     return if (n > 0 && n % 1 == 0.0) "YES" else "NO"
 }
-//2nd Number of DataStructure Problem Solve
+//6th Number of Algorithm Problem Solve
+
+//There will be two arrays of integers. Determine all integers that satisfy the following two conditions:
+//
+//The elements of the first array are all factors of the integer being considered
+//The integer being considered is a factor of all elements of the second array
+//These numbers are referred to as being between the two arrays. Determine how many such numbers exist.
+
+//=>
+
+fun getTotalX(a: Array<Int>, b: Array<Int>): Int {
+    fun gcd(x: Int, y: Int): Int {
+        return if (y == 0) x else gcd(y, x % y)
+    }
+
+    fun lcm(x: Int, y: Int): Int {
+        return (x / gcd(x, y)) * y
+    }
+
+    val lcmA = a.reduce { acc, num -> lcm(acc, num) }
+
+    val gcdB = b.reduce { acc, num -> gcd(acc, num) }
+
+    var count = 0
+    var multiple = lcmA
+
+    while (multiple <= gcdB) {
+        if (gcdB % multiple == 0) {
+            count++
+        }
+        multiple += lcmA
+    }
+
+    return count
+}
+
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
