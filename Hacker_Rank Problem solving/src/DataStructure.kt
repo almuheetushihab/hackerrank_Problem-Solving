@@ -49,7 +49,7 @@ fun dynamicArray(n: Int, queries: Array<Array<Int>>): Array<Int> {
 }
 
 
-//4th Number of DataStructure Problem Solve
+
 // 4th Number of DataStructure Problem Solve
 
 fun rotateLeft(d: Int, arr: Array<Int>): Array<Int> {
@@ -69,7 +69,25 @@ fun rotateLeft(d: Int, arr: Array<Int>): Array<Int> {
 }
 
 
+//5th Number of Algorithm Problem Solve
 
+//You are choreographing a circus show with various animals. For one act, you are given two kangaroos on a number line ready to jump in the positive direction (i.e, toward positive infinity).
+//
+//The first kangaroo starts at location x1 and moves at a rate of v1 meters per jump.
+//The second kangaroo starts at location x2 and moves at a rate of v2 meters per jump.
+//You have to figure out a way to get both kangaroos at the same location at the same time as part of the show. If it is possible, return YES, otherwise return NO.
+
+//=>
+
+fun kangaroo(x1: Int, v1: Int, x2: Int, v2: Int): String {
+    if (v1 == v2) {
+        return if (x1 == x2) "YES" else "NO"
+    }
+
+    val n = (x2 - x1).toDouble() / (v1 - v2).toDouble()
+
+    return if (n > 0 && n % 1 == 0.0) "YES" else "NO"
+}
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
