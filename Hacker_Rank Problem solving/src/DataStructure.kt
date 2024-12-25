@@ -49,7 +49,6 @@ fun dynamicArray(n: Int, queries: Array<Array<Int>>): Array<Int> {
 }
 
 
-
 // 4th Number of DataStructure Problem Solve
 
 fun rotateLeft(d: Int, arr: Array<Int>): Array<Int> {
@@ -124,7 +123,31 @@ fun getTotalX(a: Array<Int>, b: Array<Int>): Int {
     return count
 }
 
-//2nd Number of DataStructure Problem Solve
+//7th Number of DataStructure Problem Solve
+//Maria plays college basketball and wants to go pro.
+//Each season she maintains a record of her play.
+//She tabulates the number of times she breaks her season record for most points and least points in a game.
+//Points scored in the first game establish her record for the season, and she begins counting from there.
+
+//=>
+fun breakingRecords(scores: Array<Int>): Array<Int> {
+    var highest = scores[0]
+    var lowest = scores[0]
+    var highBreaks = 0
+    var lowBreaks = 0
+
+    for (i in 1 until scores.size) {
+        if (scores[i] > highest) {
+            highest = scores[i]
+            highBreaks++
+        } else if (scores[i] < lowest) {
+            lowest = scores[i]
+            lowBreaks++
+        }
+    }
+    return arrayOf(highBreaks, lowBreaks)
+}
+
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
