@@ -179,7 +179,22 @@ fun birthday(s: Array<Int>, d: Int, m: Int): Int {
 }
 
 
-//2nd Number of DataStructure Problem Solve
+//9th Number of Algorithms Problem Solve
+//Given array of integers and a positive integer k. determine the number of (i,j) pairs where i<j and ar[j] is divisible by k.
+
+//=>
+fun divisibleSumPairs(n: Int, k: Int, ar: Array<Int>): Int {
+    var count = 0
+    for (i in 0 until n) {
+        for (j in i + 1 until n) {
+            if ((ar[i] + ar[j]) % k == 0) {
+                count++
+            }
+        }
+    }
+    return count
+}
+
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
