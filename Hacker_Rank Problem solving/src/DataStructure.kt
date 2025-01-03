@@ -156,6 +156,27 @@ fun breakingRecords(scores: Array<Int>): Array<Int> {
 //Determine how many ways she can divide the chocolate.
 
 //=>
+fun birthday(s: Array<Int>, d: Int, m: Int): Int {
+    var count = 0
+    var sum = 0
+
+    for (i in 0 until m) {
+        sum += s[i]
+    }
+
+    if (sum == d) {
+        count++
+    }
+
+    for (i in m until s.size) {
+        sum = sum - s[i - m] + s[i]
+        if (sum == d) {
+            count++
+        }
+    }
+
+    return count
+}
 
 
 //2nd Number of DataStructure Problem Solve
