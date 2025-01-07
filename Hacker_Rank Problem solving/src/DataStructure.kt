@@ -195,7 +195,9 @@ fun divisibleSumPairs(n: Int, k: Int, ar: Array<Int>): Int {
     return count
 }
 
-//2nd Number of DataStructure Problem Solve
+//10 Number of DataStructure Problem Solve
+
+
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
 //2nd Number of DataStructure Problem Solve
