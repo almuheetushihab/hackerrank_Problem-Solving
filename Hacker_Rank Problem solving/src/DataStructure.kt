@@ -194,6 +194,17 @@ fun divisibleSumPairs(n: Int, k: Int, ar: Array<Int>): Int {
     }
     return count
 }
+fun divisibleSumPairsa(n: Int, k: Int, ar: Array<Int>): Int {
+    var count = 0
+    for (i in 0 until n) {
+        for (j in i + 1 until n) {
+            if ((ar[i] + ar[j]) % k == 0) {
+                count++
+            }
+        }
+    }
+    return count
+}
 
 //10 Number of DataStructure Problem Solve
 
