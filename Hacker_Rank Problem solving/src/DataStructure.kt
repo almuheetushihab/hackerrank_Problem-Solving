@@ -218,7 +218,7 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 }
 
 //10 Number of DataStructure Problem Solve
-
+//Given an array of bird sightings where every element represents a bird type id, determine the id of the most frequently sighted type. If more than 1 type has been spotted that maximum amount, return the smallest of their ids.
 
 //11 Number of DataStructure Problem Solve
 
