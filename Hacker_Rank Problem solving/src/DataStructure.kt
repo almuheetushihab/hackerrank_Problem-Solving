@@ -221,6 +221,32 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 //Given an array of bird sightings where every element represents a bird type id,
 // determine the id of the most frequently sighted type. If more than 1 type has been spotted that maximum amount,
 // return the smallest of their ids.
+//=>
+//function migratoryBirds(arr) {
+//    const birdCounts = {};
+//
+//    arr.forEach(bird => {
+//        birdCounts[bird] = (birdCounts[bird] || 0) + 1;
+//    });
+//
+//    let maxCount = 0;
+//    let smallestBirdId = Number.MAX_SAFE_INTEGER;
+//
+//    for (const bird in birdCounts) {
+//        const count = birdCounts[bird];
+//        const birdId = parseInt(bird, 10);
+//
+//        if (count > maxCount || (count === maxCount && birdId < smallestBirdId)) {
+//            maxCount = count;
+//            smallestBirdId = birdId;
+//        }
+//    }
+//
+//    return smallestBirdId;
+//}
+//
+//const birdSightings = [1, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5];
+//console.log(migratoryBirds(birdSightings));
 
 //11 Number of DataStructure Problem Solve
 
