@@ -242,7 +242,7 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 //}
 
 
-//11 Number of DataStructure Problem Solve
+//11 Number of Algorithm Problem Solve
 
 
 //12 Number of DataStructure Problem Solve
