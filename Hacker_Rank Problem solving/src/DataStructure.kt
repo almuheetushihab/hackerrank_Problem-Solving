@@ -242,6 +242,26 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 //}
 
 
+//fun mostFrequentBirdId(birdSightings: Array<Int>): Int {
+//    val birdFrequency = mutableMapOf<Int, Int>()
+//
+//    for (bird in birdSightings) {
+//        birdFrequency[bird] = birdFrequency.getOrDefault(bird, 0) + 1
+//    }
+//
+//
+//    return birdFrequency.entries
+//        .sortedWith(compareByDescending<Map.Entry<Int, Int>> { it.value }.thenBy { it.key })
+//        .first().key
+//}
+//
+//fun main() {
+//    val birdSightings = arrayOf(1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4)
+//    val result = mostFrequentBirdId(birdSightings)
+//    println("The most frequent bird ID is: $result")
+//}
+
+
 //11 Number of Algorithm Problem Solve
 
 
