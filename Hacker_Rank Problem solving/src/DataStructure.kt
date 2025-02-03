@@ -244,6 +244,10 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 
 
 //11 Number of Algorithm Problem Solve
+//Two friends Anna and Brian,
+// are deciding how to split the bill at a dinner. Each will only pay for the items they consume.
+// Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
+//=>
 
 
 //12 Number of Algorithm Problem Solve
