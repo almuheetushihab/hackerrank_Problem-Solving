@@ -254,6 +254,17 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 //    val result = mostFrequentBirdId(birdSightings)
 //    println("The most frequent bird ID is: $result")
 //}
+// 12 Number of Algorithm Problem Solve
+//Two friends Anna and Brian,
+// are deciding how to split the bill at a dinner. Each will only pay for the items they consume.
+// Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
+//=>
+
+//fun main() {
+//    val birdSightings = arrayOf(1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4)
+//    val result = mostFrequentBirdId(birdSightings)
+//    println("The most frequent bird ID is: $result")
+//}
 
 //12 Number of Algorithm Problem Solve
 
