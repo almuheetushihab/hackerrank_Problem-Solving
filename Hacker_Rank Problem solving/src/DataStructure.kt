@@ -249,6 +249,11 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 // Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
 //=>
 
+//fun main() {
+//    val birdSightings = arrayOf(1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4)
+//    val result = mostFrequentBirdId(birdSightings)
+//    println("The most frequent bird ID is: $result")
+//}
 
 //12 Number of Algorithm Problem Solve
 
