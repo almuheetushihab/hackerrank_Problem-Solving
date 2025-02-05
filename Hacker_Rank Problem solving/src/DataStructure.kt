@@ -270,6 +270,10 @@ fun main(){
 
 }
 
+fun main(){
+
+}
+
 //12 Number of Algorithm Problem Solve
 
 
