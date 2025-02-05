@@ -266,7 +266,9 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 //    println("The most frequent bird ID is: $result")
 //}
 
-fun
+fun main(){
+
+}
 
 //12 Number of Algorithm Problem Solve
 
