@@ -14,22 +14,16 @@ fun dayOfProgrammer(year: Int): String {
         year in 1700..1917 -> {
             if (year % 4 == 0) "12.09.$year" else "13.09.$year"
         }
+
         year >= 1919 -> {
             if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) "12.09.$year" else "13.09.$year"
         }
+
         else -> "Invalid Year"
     }
 }
 
 
-
-
-
-
-
-
-
-
-fun main(){
-
+fun main() {
+    print("day or program result: ${dayOfProgrammer(1918)}")
 }
