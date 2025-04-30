@@ -1,5 +1,7 @@
 package hackerrank
 
+import kotlin.math.abs
+
 // now start Algorithms problem_solving with hackerRank🙂
 
 /* 1: Marie has invented a Time Machine and wants to travel back in time to Russia to celebrate the Day of the Programmer,
@@ -20,6 +22,25 @@ fun dayOfProgrammer(year: Int): String {
         }
 
         else -> "Invalid Year"
+    }
+}
+
+/*
+2. Two cats and a mouse are at various positions on a line. You will be given their starting positions.
+ Your task is to determine which cat will reach the mouse first,
+  assuming the mouse does not move and the cats travel at equal speed. If the cats arrive at the same time,
+   the mouse will be allowed to move and it will escape while they fight.
+*/
+
+//=>
+fun catAndMouse(x: Int, y: Int, z: Int): String {
+    val distanceA = abs(x - z)
+    val distanceB = abs(y - z)
+
+    return when {
+        distanceA < distanceB -> "Cat A"
+        distanceA > distanceB -> "Cat B"
+        else -> "Mouse C"
     }
 }
 
