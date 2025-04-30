@@ -1,4 +1,4 @@
-//1st Number of DataStructure Problem Solve
+package hackerrank//1st Number of DataStructure Problem Solve
 
 fun reverseArray(a: Array<Int>): Array<Int> {
     return a.reversedArray()
@@ -72,8 +72,8 @@ fun rotateLeft(d: Int, arr: Array<Int>): Array<Int> {
 
 //You are choreographing a circus show with various animals. For one act, you are given two kangaroos on a number line ready to jump in the positive direction (i.e, toward positive infinity).
 //
-//The first kangaroo starts at location x1 and moves at a rate of v1 meters per jump.
-//The second kangaroo starts at location x2 and moves at a rate of v2 meters per jump.
+//The first hackerrank.kangaroo starts at location x1 and moves at a rate of v1 meters per jump.
+//The second hackerrank.kangaroo starts at location x2 and moves at a rate of v2 meters per jump.
 //You have to figure out a way to get both kangaroos at the same location at the same time as part of the show. If it is possible, return YES, otherwise return NO.
 
 //=>
@@ -235,7 +235,7 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 //        .first().key
 //}
 //
-//fun main() {
+//fun hackerrank.main() {
 //    val birdSightings = arrayOf(1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4)
 //    val result = mostFrequentBirdId(birdSightings)
 //    println("The most frequent bird ID is: $result")
@@ -249,7 +249,7 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 // Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
 //=>
 
-//fun main() {
+//fun hackerrank.main() {
 //    val birdSightings = arrayOf(1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4)
 //    val result = mostFrequentBirdId(birdSightings)
 //    println("The most frequent bird ID is: $result")
@@ -260,15 +260,11 @@ fun divisibleSumPjhairsa(n: Int, k: Int, ar: Array<Int>): Int {
 // Brian gets the check and calculates Anna's portion. You must determine if his calculation is correct.
 //=>
 
-//fun main() {
+//fun hackerrank.main() {
 //    val birdSightings = arrayOf(1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4)
 //    val result = mostFrequentBirdId(birdSightings)
 //    println("The most frequent bird ID is: $result")
 //}
-
-fun main(){
-
-}
 
 fun main(){
 
