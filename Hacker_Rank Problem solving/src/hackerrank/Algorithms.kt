@@ -45,6 +45,18 @@ fun catAndMouse(x: Int, y: Int, z: Int): String {
 }
 
 
+/*
+3. Lily likes to play games with integers. She has created a new game where she determines the difference between a number and its reverse.
+ For instance, given the number , its reverse is . Their difference is .
+ The number  reversed is , and their difference is .
+
+She decides to apply her game to decision making. She will look at a numbered range of days and will only go to a movie on a beautiful day.
+*/
+
+//=>
+
+
+
 fun main() {
-    print("day or program result: ${dayOfProgrammer(1918)}") print("day or program result: ${dayOfProgrammer(1918)}")
+    print("day or program result: ${dayOfProgrammer(1918)}")
 }
