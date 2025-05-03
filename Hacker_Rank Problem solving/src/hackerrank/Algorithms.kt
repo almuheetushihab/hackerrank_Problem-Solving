@@ -54,7 +54,22 @@ She decides to apply her game to decision making. She will look at a numbered ra
 */
 
 //=>
+fun beautifulDays(i: Int, j: Int, k: Int): Int {
+    // Write your code here
 
+    var count = 0
+
+    for (day in i..j) {
+        val reversedDay = day.toString().reversed().toInt()
+        val difference = Math.abs(day - reversedDay)
+
+        if (difference % k == 0) {
+            count++
+        }
+    }
+
+    return count
+}
 
 
 fun main() {
