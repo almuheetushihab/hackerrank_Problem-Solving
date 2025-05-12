@@ -74,5 +74,8 @@ fun beautifulDays(i: Int, j: Int, k: Int): Int {
 
 fun main() {
     print("day or program result: ${dayOfProgrammer(1918)}")
-    print("day or program result: ${dayOfProgrammer(1918)}")
+    print("day or program result: ${dayOfProgrammer(1914)}")
+    print("day or program result: ${dayOfProgrammer(1913)}")
+    print("day or program result: ${dayOfProgrammer(1913)}")
+    print("day or program result: ${dayOfProgrammer(1911)}")
 }
