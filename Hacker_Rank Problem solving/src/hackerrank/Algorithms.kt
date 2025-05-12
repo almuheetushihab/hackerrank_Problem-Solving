@@ -71,8 +71,29 @@ fun beautifulDays(i: Int, j: Int, k: Int): Int {
     return count
 }
 
+//=>
+fun beautifuljDays(i: Int, j: Int, k: Int): Int {
+    // Write your code here
+
+    var count = 0
+
+    for (day in i..j) {
+        val reversedDay = day.toString().reversed().toInt()
+        val difference = abs(day - reversedDay)
+
+        if (difference % k == 0) {
+            count++
+        }
+    }
+
+    return count
+}
+
 
 fun main() {
     print("day or program result: ${dayOfProgrammer(1918)}")
-    print("day or program result: ${dayOfProgrammer(1918)}")
+    print("day or program result: ${dayOfProgrammer(1914)}")
+    print("day or program result: ${dayOfProgrammer(1913)}")
+    print("day or program result: ${dayOfProgrammer(1913)}")
+    print("day or program result: ${dayOfProgrammer(1911)}")
 }
