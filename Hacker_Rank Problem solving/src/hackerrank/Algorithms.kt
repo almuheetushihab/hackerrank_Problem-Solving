@@ -71,29 +71,32 @@ fun beautifulDays(i: Int, j: Int, k: Int): Int {
     return count
 }
 
+/*Bill Division*/
+//Two friends Anna and Brian, are deciding how to split the bill at a dinner.
+// Each will only pay for the items they consume. Brian gets the check and calculates Anna's portion.
+// You must determine if his calculation is correct.
+
 //=>
-fun beautifuljDays(i: Int, j: Int, k: Int): Int {
-    // Write your code here
 
-    var count = 0
+fun bonAppetit(bill: Array<Int>, k: Int, b: Int): Unit {
 
-    for (day in i..j) {
-        val reversedDay = day.toString().reversed().toInt()
-        val difference = abs(day - reversedDay)
+    val totalCost = bill.filterIndexed { index, _ -> index != k }.sum()
 
-        if (difference % k == 0) {
-            count++
-        }
+    val annaShare = totalCost / 2
+
+    if (b == annaShare) {
+        println("Bon Appetit")
+    } else {
+        println(b - annaShare)
     }
-
-    return count
 }
 
 
 fun main() {
     print("day or program result: ${dayOfProgrammer(1918)}")
-    print("day or program result: ${dayOfProgrammer(1914)}")
-    print("day or program result: ${dayOfProgrammer(1913)}")
-    print("day or program result: ${dayOfProgrammer(1913)}")
-    print("day or program result: ${dayOfProgrammer(1911)}")
+    val bill = arrayOf(3, 10, 2, 9)
+    val k = 1
+    val b = 1
+
+    bonAppetit(bill, k, b)
 }
