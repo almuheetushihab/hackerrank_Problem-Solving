@@ -72,7 +72,7 @@ fun beautifulDays(i: Int, j: Int, k: Int): Int {
 }
 
 /*Bill Division*/
-//Two friends Anna and Brian, are deciding how to split the bill at a dinner.
+//Two friends, Anna and Brian, are deciding how to split the bill at a dinner.
 // Each will only pay for the items they consume. Brian gets the check and calculates Anna's portion.
 // You must determine if his calculation is correct.
 
@@ -97,6 +97,27 @@ fun bonAppetit(bill: Array<Int>, k: Int, b: Int): Unit {
 //There is a large pile of socks that must be paired by color.
 // Given an array of integers representing the color of each sock,
 // determine how many pairs of socks with matching colors there are.
+
+//=>
+
+fun sockMerchant(n: Int, ar: Array<Int>): Int {
+    // Write your code here
+    val colorCount = mutableMapOf<Int, Int>()
+
+    for (sock in ar) {
+        colorCount[sock] = colorCount.getOrDefault(sock, 0) + 1
+    }
+
+    var totalPairs = 0
+
+    for ((_, count) in colorCount) {
+        totalPairs += count / 2
+    }
+
+    return totalPairs
+
+}
+
 
 fun main() {
     print("day or program result: ${dayOfProgrammer(1918)}")
