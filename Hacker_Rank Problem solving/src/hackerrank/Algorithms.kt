@@ -119,6 +119,11 @@ fun sockMerchant(n: Int, ar: Array<Int>): Int {
 }
 
 
+/*Drawing Book*/
+//=>
+
+
+
 fun main() {
     print("day or program result: ${dayOfProgrammer(1918)}")
     val bill = arrayOf(3, 10, 2, 9)
