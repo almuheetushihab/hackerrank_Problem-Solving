@@ -121,7 +121,13 @@ fun sockMerchant(n: Int, ar: Array<Int>): Int {
 
 /*Drawing Book*/
 //=>
+fun pageCount(n: Int, p: Int): Int {
+    val fromFront = p / 2
 
+    val fromBack = n / 2 - p / 2
+
+    return minOf(fromFront, fromBack)
+}
 
 
 fun main() {
