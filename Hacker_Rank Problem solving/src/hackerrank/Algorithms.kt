@@ -129,6 +129,10 @@ fun pageCount(n: Int, p: Int): Int {
     return minOf(fromFront, fromBack)
 }
 
+//Counting Valleys
+//=>
+
+
 
 fun main() {
     print("day or program result: ${dayOfProgrammer(1918)}")
