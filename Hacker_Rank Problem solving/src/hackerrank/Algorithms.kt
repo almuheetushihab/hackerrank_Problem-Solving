@@ -134,6 +134,8 @@ fun pageCount(n: Int, p: Int): Int {
 
 
 
+
+
 fun main() {
     print("day or program result: ${dayOfProgrammer(1918)}")
     val bill = arrayOf(3, 10, 2, 9)
